@@ -1,0 +1,34 @@
+{
+    "name": "datatables.net/datatables.net-editor-bs5",
+    "description": "Editor is a comprehensive editing extension for DataTables that provides the ability to easily add, edit and delete rows on a database that is displayed by a DataTable. Editor provides a clean and responsive interface for end user manipulation of data, an expressive API for complete control and a well defined server communications protocol for data submission. This is Editor for DataTables with styling for [Bootstrap5](https://getbootstrap.com/)",
+    "support": {
+        "forum": "https://datatables.net/forums"
+    },
+    "homepage": "https://www.datatables.net/",
+    "authors": [
+        {
+            "name": "SpryMedia",
+            "homepage": "https://datatables.net"
+        }
+    ],
+    "license": [
+        "SEE LICENSE IN License.txt"
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "keywords": [
+        "Editing",
+        "CRUD",
+        "Inline",
+        "Modal",
+        "Multi-row",
+        "Bootstrap",
+        "Bootstrap5",
+        "Datatables",
+        "table"
+    ],
+    "require": {
+        "datatables.net/datatables.net-editor": "3.0.0-beta.1",
+        "datatables.net/datatables.net-bs5": "3.0.0-0"
+    }
+}

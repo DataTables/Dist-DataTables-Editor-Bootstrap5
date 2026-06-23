@@ -1,0 +1,18 @@
+{
+    "js": [
+        "js/editor.bootstrap5.js",
+        "js/editor.bootstrap5.min.js",
+        "js/editor.bootstrap5.min.mjs",
+        "js/editor.bootstrap5.mjs"
+    ],
+    "css": [
+        "css/editor.bootstrap5.css",
+        "css/editor.bootstrap5.min.css"
+    ],
+    "types": [
+
+    ],
+    "src-repo": "http://github.com/DataTables/Editor",
+    "last-tag": "2.5.2",
+    "last-sync": ""
+}

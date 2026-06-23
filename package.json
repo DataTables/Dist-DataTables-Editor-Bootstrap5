@@ -1,0 +1,39 @@
+{
+    "name": "datatables.net-editor-bs5",
+    "description": "Editor for DataTables with styling for [Bootstrap5](https://getbootstrap.com/)",
+    "main": "js/editor.bootstrap5.js",
+    "module": "js/editor.bootstrap5.mjs",
+    "style": "css/editor.bootstrap5.css",
+    "types": "./types/editor.bootstrap5.d.ts",
+    "version": "3.0.0-beta.1",
+    "files": [
+        "css/**/*.css",
+        "js/**/*.js",
+        "js/**/*.mjs",
+        "types/**/*.d.ts"
+    ],
+    "keywords": [
+        "Editing",
+        "CRUD",
+        "Inline",
+        "Modal",
+        "Multi-row",
+        "Bootstrap",
+        "Bootstrap5",
+        "Datatables",
+        "table",
+        "filter",
+        "sort"
+    ],
+    "dependencies": {
+        "datatables.net-editor": "3.0.0-beta.1",
+        "datatables.net-bs5": "3.0.0-0"
+    },
+    "author": {
+        "name": "SpryMedia Ltd",
+        "url": "http://datatables.net"
+    },
+    "homepage": "https://datatables.net",
+    "bugs": "https://datatables.net/forums",
+    "license": "SEE LICENSE IN License.txt"
+}
