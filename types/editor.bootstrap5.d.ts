@@ -1,5 +1,5 @@
 
-import DataTable from '@datatables.net/editor';
+import Editor from 'datatables.net-editor';
 
-export default DataTable;
-export * from '@datatables.net/editor';
+export default Editor;
+export * from 'datatables.net-editor';
