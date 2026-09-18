@@ -9,7 +9,9 @@
         "css/editor.bootstrap5.css",
         "css/editor.bootstrap5.min.css"
     ],
-    "types": [],
+    "types": [
+        "types/editor.bootstrap5.d.ts"
+    ],
     "src-repo": "http://github.com/DataTables/Editor",
     "last-tag": "3.0.2",
     "last-sync": "043ff4e2bd9d66fe79844d482684650c8d45acf7"
