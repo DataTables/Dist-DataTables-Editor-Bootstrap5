@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-editor-bs5",
     "description": "Editor for DataTables with styling for [Bootstrap5](https://getbootstrap.com/)",
-    "main": "js/editor.bootstrap5.js",
-    "module": "js/editor.bootstrap5.mjs",
-    "style": "css/editor.bootstrap5.css",
+    "main": "./js/editor.bootstrap5.js",
+    "module": "./js/editor.bootstrap5.mjs",
+    "style": "./css/editor.bootstrap5.css",
     "types": "./types/editor.bootstrap5.d.ts",
     "version": "3.0.2",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "Editing",
@@ -35,5 +34,24 @@
     },
     "homepage": "https://datatables.net",
     "bugs": "https://datatables.net/forums",
-    "license": "SEE LICENSE IN License.txt"
+    "license": "SEE LICENSE IN License.txt",
+    "exports": {
+        ".": {
+            "types": "./types/editor.bootstrap5.d.ts",
+            "import": "./js/editor.bootstrap5.mjs",
+            "default": "./js/editor.bootstrap5.mjs",
+            "require": "./js/editor.bootstrap5.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/editor.bootstrap5.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
