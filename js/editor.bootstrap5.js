@@ -1,4 +1,4 @@
-/*! Editor Bootstrap 5 styling 3.0.2 for DataTables
+/*! Editor Bootstrap 5 styling 3.1.0 for DataTables
  * Copyright (c) SpryMedia Ltd - https://datatables.net/license/plus
  */
 
