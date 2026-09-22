@@ -5,7 +5,7 @@
     "module": "./js/editor.bootstrap5.mjs",
     "style": "./css/editor.bootstrap5.css",
     "types": "./types/editor.bootstrap5.d.ts",
-    "version": "3.0.2",
+    "version": "3.1.0",
     "files": [
         "js",
         "css",
@@ -25,8 +25,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-editor": "3.0.2",
-        "datatables.net-bs5": "^3"
+        "datatables.net-editor": "3.1.0",
+        "datatables.net-bs5": "^3.1"
     },
     "author": {
         "name": "SpryMedia Ltd",
