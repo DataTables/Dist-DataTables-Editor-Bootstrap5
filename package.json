@@ -38,9 +38,10 @@
     "exports": {
         ".": {
             "types": "./types/editor.bootstrap5.d.ts",
+            "style": "./css/editor.bootstrap5.css",
             "import": "./js/editor.bootstrap5.mjs",
-            "default": "./js/editor.bootstrap5.mjs",
-            "require": "./js/editor.bootstrap5.js"
+            "require": "./js/editor.bootstrap5.js",
+            "default": "./js/editor.bootstrap5.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
