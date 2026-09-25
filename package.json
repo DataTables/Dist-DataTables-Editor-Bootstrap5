@@ -5,7 +5,7 @@
     "module": "./js/editor.bootstrap5.mjs",
     "style": "./css/editor.bootstrap5.css",
     "types": "./types/editor.bootstrap5.d.ts",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "files": [
         "js",
         "css",
@@ -25,7 +25,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-editor": "3.1.0",
+        "datatables.net-editor": "3.1.1",
         "datatables.net-bs5": "^3.1"
     },
     "author": {
