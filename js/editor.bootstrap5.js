@@ -1,4 +1,4 @@
-/*! Editor Bootstrap 5 styling 3.1.1 for DataTables
+/*! Editor Bootstrap 5 styling 3.1.2 for DataTables
  * Copyright (c) SpryMedia Ltd - https://datatables.net/license/plus
  */
 
@@ -10,17 +10,6 @@
 		});
 	}
 	else if (typeof exports === 'object') {
-		// CommonJS
-		var cjsRequires = function (root) {
-			if (! root.DataTable) {
-				require('datatables.net-bs5')(root);
-			}
-
-			if (! window.DataTable.Editor) {
-				require('datatables.net-editor')(root);
-			}
-		};
-
 		if (typeof window === 'undefined') {
 			module.exports = function (root) {
 				if (! root) {
@@ -28,14 +17,28 @@
 					// root. This will give an error otherwise
 					root = window;
 				}
+				
+				var DataTable = root.DataTable ?
+					root.DataTable :
+					require('datatables.net-bs5')(root);
 
-				cjsRequires(root);
-				return factory(root, root.document, root.DataTable);
+				if (! root.DataTable.Editor) {
+					require('datatables.net-editor')(root);
+				}
+
+				return factory(root, root.document, DataTable);
 			};
 		}
 		else {
-			cjsRequires(window);
-			module.exports = factory(window, window.document, window.DataTable);
+			var DataTable = window.DataTable ?
+				window.DataTable :
+				require('datatables.net-bs5');
+
+			if (! window.DataTable.Editor) {
+				require('datatables.net-editor');
+			}
+
+			module.exports = factory(window, window.document, DataTable);
 		}
 	}
 	else {
